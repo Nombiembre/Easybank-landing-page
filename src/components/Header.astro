@@ -1,0 +1,25 @@
+---
+import Image from 'astro/components/Image.astro'
+import Button from './Button.astro'
+import Nav from '@/components/Nav.astro'
+---
+
+<header class="shadow-md bg-white z-10 sticky top-0 w-full">
+  <div class="container || flex justify-between items-center p-8 md:p-0">
+    <svg class="icon max-w-[200px] max-h-[20px]">
+      <use xlink:href="/images/logo.svg#logo"></use>
+    </svg>
+    <Nav nav="primary" class="md:block hidden" id="nav-primary" />
+    <Button class="md:block hidden" />
+    <Image id="hamburger-menu" class="md:hidden block z-50" src="/public/images/icon-hamburger.svg" alt="Hamburger Menu" width={35} height={35} />
+  </div>
+</header>
+
+<script>
+  const hamburgerMenu = document.getElementById('hamburger-menu') as HTMLElement
+  const navPrimary = document.getElementById('nav-primary') as HTMLElement
+
+  hamburgerMenu.addEventListener('click', () => {
+    navPrimary.toggleAttribute('mobile-visible')
+  })
+</script>

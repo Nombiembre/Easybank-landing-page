@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  font-size: '1.125rem';
+  @apply text-gray-500;
+}
+
+h1 {
+  @apply text-6xl;
+}
+
+h2{
+  @apply text-4xl;
+}
+
+@media (max-width: 768px) {
+  body {
+    @apply text-sm text-center;
+  }
+
+  h1 {
+    @apply text-4xl mx-auto;
+  }
+
+  h2{
+    @apply text-3xl mx-auto;
+  }
+}
+
+/* Utilities */
+.container {
+  --_max-width: 1200px;
+  width: min(var(--_max-width), 96%);
+  padding-inline: 1rem;
+
+  margin-inline: auto;
+}
+
+.content-flow > * + * {
+  @apply mt-4;
+}
+
+.content-flow-big > * + * {
+  @apply mt-10;
+}
+

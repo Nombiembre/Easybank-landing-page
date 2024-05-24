@@ -1,0 +1,71 @@
+---
+interface Props {
+  nav?: string
+  class?: string
+  id?: string
+}
+const { nav, class: classes, id } = Astro.props
+---
+
+<nav id={id} class=`${classes}`>
+  <ul class:list={['secondary', { primary: nav }]}>
+    <li><a href="">Home</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">Careers</a></li>
+  </ul>
+</nav>
+
+<style>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  a {
+    @apply text-gray-500;
+    display: inline-block;
+    padding-block: 2rem;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 4px solid transparent;
+
+    &:hover {
+      @apply border-b-primary-LimeGreen;
+      color: black;
+    }
+  }
+
+  /* Mobile Nav */
+  [mobile-visible] {
+    @apply absolute inset-0 min-h-full z-10 flex flex-col justify-between items-center
+    bg-transparent shadow-md min-h-screen;
+  }
+
+  [mobile-visible]::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+  }
+
+  [mobile-visible] ul {
+    @apply flex flex-col my-auto;
+  }
+
+  [mobile-visible] a {
+    @apply text-2xl;
+    display: block;
+    min-width: 100%;
+    padding-block: 1rem;
+    border-bottom: none;
+    color: white;
+    font-weight: 700;
+  }
+</style>

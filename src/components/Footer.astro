@@ -1,0 +1,27 @@
+---
+import Button from './Button.astro'
+import NavSecondary from './NavSecondary.astro'
+import SocialIcons from './SocialIcons.astro'
+---
+
+<footer class="bg-primary-DarkBlue">
+  <div class="container py-20 md:grid md:grid-cols-3">
+    <div class="content-flow-big">
+      <svg class="icon max-w-[150px] max-h-[20px] mx-auto md:mx-0">
+        <use xlink:href="/images/logo.svg#logo"></use>
+      </svg>
+      <SocialIcons />
+    </div>
+    <NavSecondary />
+    <div class="md:flex md:flex-col justify-between text-right">
+      <Button class="self-end" />
+      <p>© Easybank. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    --svg-color: white;
+  }
+</style>
