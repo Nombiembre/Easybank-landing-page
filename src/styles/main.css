@@ -5,6 +5,7 @@
 body {
   font-family: 'Public Sans', sans-serif;
   font-size: '1.125rem';
+  overflow-x: scroll;
   @apply text-gray-500;
 }
 
