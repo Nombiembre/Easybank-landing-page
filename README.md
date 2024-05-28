@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://loopstudios-landing-page-pearl-rho.vercel.app/](https://loopstudios-landing-page-pearl-rho.vercel.app/)
-- TimeLapse Solution: [https://www.tiktok.com/@freelancer_on_fiverr/video/7373947513264540933?is_from_webapp=1&sender_device=pc&web_id=7318906560829326853](https://www.tiktok.com/@freelancer_on_fiverr/video/7373947513264540933?is_from_webapp=1&sender_device=pc&web_id=7318906560829326853)
+- Live Site URL: [https://easybank-landing-page-one-lemon.vercel.app/](https://easybank-landing-page-one-lemon.vercel.app/)
+- TimeLapse Solution: [https://www.tiktok.com/@freelancer_on_fiverr/video/7373537289072364805?is_from_webapp=1&sender_device=pc&web_id=7318906560829326853](https://www.tiktok.com/@freelancer_on_fiverr/video/7373537289072364805?is_from_webapp=1&sender_device=pc&web_id=7318906560829326853)
 
 ## My process
 
