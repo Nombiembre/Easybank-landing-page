@@ -15,4 +15,18 @@ const { title } = Astro.props
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+
+  <!-- Seo 
+  This website is about CEO in astro
+  -->
+  <meta name="description" content="" />
+  
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content="Astro description" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://astro.build" />
+  <meta property="og:image" content="https://astro.build/social.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://astro.build/social.png" />
 </head>
